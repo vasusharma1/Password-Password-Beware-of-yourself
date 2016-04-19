@@ -23,7 +23,7 @@ int main()
 	Bugs:
 	1.> character entring during choice. //done
 	2.>include or exclude whitespaces during insertion of password. //done
-	3.>remove spaces from auto generator.
+	3.>remove spaces from auto generator.//done
 	4.> character entring during 2nd choice. //done
 	5.> generate function for removing whitespaces from array.//done
 	6.>clear memory after every singal execution.//done
