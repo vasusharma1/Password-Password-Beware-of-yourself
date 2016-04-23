@@ -6,6 +6,7 @@
 using namespace std;
 int main()
 {
+	//for info https://www.youtube.com/watch?v=__o1jE0JSiE;
 	/* points are
 	1.> no. of characters(done)   // +(n*2) where n=count ginti=n //done
 	2.>uppercase(done)		//+((no of letters-n)*2)  no of letters=up //  // total 5 and sum=20 s from 100 this rating is given
@@ -18,12 +19,18 @@ int main()
 	/*deduction
 	1.>letters only // -n //done
 	2.>no. only // -n //done
+	3.>consecutive uppercase // -(n*2)
+	4.>consecutive lowercase // -(n*2)
+	5.>consecutive numbers // -(n*2)
+	6.>Sequential Letters (3+) // -(n*3)
+	7.>Sequential Numbers (3+) // -(n*3)
+	8.> Sequential Symbols (3+) // -(n*3)
 	*/
 	/*
 	Bugs:
 	1.> character entring during choice. //done
 	2.>include or exclude whitespaces during insertion of password. //done
-	3.>remove spaces from auto generator.//done
+	3.>remove spaces from auto generator.
 	4.> character entring during 2nd choice. //done
 	5.> generate function for removing whitespaces from array.//done
 	6.>clear memory after every singal execution.//done
@@ -383,8 +390,11 @@ while(1)
 						}
 						system("cls");
 				    cout<<"your password is: "<<endl<<endl;
-				        cout<<password;
-				    cout<<endl<<endl;
+				       for(int i=0;i<n;i++)
+				       {
+					    cout<<password[i];
+				    	}
+					cout<<endl<<endl;
 				    system("pause");
 				    break;
 			}
